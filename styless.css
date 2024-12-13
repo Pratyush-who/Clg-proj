@@ -15,11 +15,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
     line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
-}
+  }
 
 /* Header Section */
 header {
@@ -29,6 +30,8 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -47,6 +50,7 @@ header {
     font-size: 1.5rem;
     color: var(--primary-color);
 }
+
 
 nav ul {
     display: flex;
@@ -266,6 +270,17 @@ footer {
     }
 }
 
+.logophoto{
+    width: 60px;
+        height: 60px;
+        background-image: url(./Blue\ Green\ Simple\ Medical\ Center\ Logo.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        margin-right: 10px;
+}
+
 @media (max-width: 480px) {
     body {
         font-size: 0.9rem;
@@ -295,7 +310,6 @@ footer {
 #about-us {
     background-color: var(--white);
     padding: 4rem 2rem;
-    margin-bottom: 4rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -363,3 +377,81 @@ footer {
         font-size: 1.8rem;
     }
 }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #fff;
+  }
+  
+  td img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+  }
+  
+  .report-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .report-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .report-link:hover {
+    text-decoration: underline;
+  }
+  
+  td button {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    background-color: #ff5722;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .download-btn {
+    background-color: #007bff;
+    color: #fff;
+  }
+  .extra{
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 30px;
+  }
+  .extra h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
